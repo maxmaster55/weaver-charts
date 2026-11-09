@@ -1,0 +1,27 @@
+[package]
+name = "weaver-charts"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+license = "MIT OR Apache-2.0"
+description = "Line, area, bar, donut and gauge charts as plain shapes or SVG, with spring-animated data changes"
+repository = "https://github.com/maxmaster55/weaver-charts"
+keywords = ["chart", "plot", "svg", "visualization", "animation"]
+categories = ["visualization", "graphics"]
+readme = "README.md"
+
+[features]
+default = []
+# Spring-animated data transitions using the Weave motion engine.
+motion = ["dep:weave-core"]
+
+[dependencies]
+weave-core = { git = "https://github.com/maxmaster55/weave-motion", optional = true }
+
+[package.metadata.docs.rs]
+all-features = true
+
+
+[[example]]
+name = "readme"
+required-features = ["motion"]
