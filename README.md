@@ -33,8 +33,7 @@ let svg = Chart::area()
     .smooth(true)
     .to_svg_with(&Theme::dark());
 
-std::fs::write("traffic.svg", svg)?;
-# Ok::<(), std::io::Error>(())
+std::fs::write("traffic.svg", svg).unwrap();
 ```
 
 ## Every chart
