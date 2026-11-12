@@ -16,7 +16,7 @@ default = []
 motion = ["dep:weave-core"]
 
 [dependencies]
-weave-core = { git = "https://github.com/maxmaster55/weave-motion", optional = true }
+weave-core = { git = "https://github.com/maxmaster55/weave-motion", package = "weaver-motion", optional = true }
 
 [package.metadata.docs.rs]
 all-features = true
