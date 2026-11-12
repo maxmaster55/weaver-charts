@@ -3,13 +3,13 @@
 version = 3
 
 [[package]]
-name = "weave-core"
-version = "0.1.0"
-source = "git+https://github.com/maxmaster55/weave-motion#d1e79e50fa7af3a796a7cc5e85b856b5522ba906"
-
-[[package]]
 name = "weaver-charts"
 version = "0.1.0"
 dependencies = [
- "weave-core",
+ "weaver-motion",
 ]
+
+[[package]]
+name = "weaver-motion"
+version = "0.1.0"
+source = "git+https://github.com/maxmaster55/weave-motion#7c2bdf256fdd50215c74625e4e36cb95482b7ead"
